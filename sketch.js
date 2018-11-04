@@ -4,7 +4,7 @@ let start_time;
 let launching = true;
 
 const PAUSE_DURATION = 5; // in minutes
-const POMODORO_DURATION = 5;
+const POMODORO_DURATION = 25;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
