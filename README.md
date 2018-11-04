@@ -18,12 +18,21 @@ Anyway, you can make anything else while the timer is running, just make sure to
 
 Here is a list of behavior on different browsers/OS :
 
-| OS | Browser | Works | Does NOT work |
-|----|---------|---------------|-----------------------|
-| macOS | Firefox | Pomodoro tab not in focus | Browser out of focus |
-| macOS | Chrome | Pomodoro tab in focus | Pomodoro tab or browser out of focus |
-| macOS | Safari | Not tested yet | Not tested yet |
-| Windows | Firefox | Not tested yet | Not tested yet |
-| Windows | Chrome | Not tested yet | Not tested yet |
+| OS | Browser | Pomodoro tab in focus | Browser in focus but other tab | Browser out of focus |
+|----|---------|-----------------------|--------------------------------|----------------------|
+| macOS | Firefox | Timer runs correctly | Timer runs correctly | Timer runs but will wait for browser focus at 00:00 to start next session |
+| macOS | Chrome (Vivaldi, Chromium,...) | Timer runs correctly | Timer runs but will wait for browser focus at 00:00 to start next session | Timer runs but will wait for browser focus at 00:00 to start next session |
+| macOS | Safari | Not tested yet | Not tested yet | Not tested yet |
+| Windows | Firefox | Not tested yet | Not tested yet | Not tested yet |
+| Windows | Chrome | Not tested yet | Not tested yet | Not tested yet |
+| Windows | Edge | Not tested yet | Not tested yet | Not tested yet |
+| Windows | Internet Explorer | Not tested yet | Not tested yet | Not tested yet |
+
+For smartphone :
+
+| OS | Browser | Pomodoro tab in focus | Browser in focus but other tab | Browser in background | Screen off | 
+|----|---------|-----------------------|--------------------------------|-----------------------|------------|
+| Android | Brave | Timer runs correctly | Timer runs but will wait for browser focus at 00:00 to start next session | Timer runs but will wait for browser focus at 00:00 to start next session | Timer runs but will wait for browser focus at 00:00 to start next session |
+| Android | Firefox | Not tested yet | Not tested yet | Not tested yet |
 
 Let me know of any issue, I did not test it on every browser so I'll welcome any feedback.
