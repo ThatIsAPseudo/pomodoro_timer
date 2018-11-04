@@ -13,7 +13,17 @@ Break :
 ![break image](images/break.png)
 
 
-**/!\ Warning** : this tool is aimed to be used while working on something else than your computer/phone since the timer won't work properly if the window is out of focus when the timer reach 00:00 ; if this happens, the timer will simply wait for getting the focus back then start the next session. However, I'm planning on correcting this behaviour and add a sound to signal the end of a session.
-Anyway, you can make something else while the timer is running, just make sure to have it open when it's getting to 00:00.
+**/!\ Warning** : The timer MAY NOT work properly if the browser is out of focus when the timer reach 00:00 ; if this happens, the timer will simply wait until getting the focus back then start the next session. However, I'm planning on correcting this behaviour and add a sound to signal the end of a session.
+Anyway, you can make anything else while the timer is running, just make sure to have it open when it's getting to 00:00.
+
+Here is a list of behavior on different browsers/OS :
+
+| OS | Browser | Works | Does NOT work |
+|----|---------|---------------|-----------------------|
+| macOS | Firefox | Pomodoro tab not in focus | Browser out of focus |
+| macOS | Chrome | Pomodoro tab in focus | Pomodoro tab or browser out of focus |
+| macOS | Safari | Not tested yet | Not tested yet |
+| Windows | Firefox | Not tested yet | Not tested yet |
+| Windows | Chrome | Not tested yet | Not tested yet |
 
 Let me know of any issue, I did not test it on every browser so I'll welcome any feedback.
