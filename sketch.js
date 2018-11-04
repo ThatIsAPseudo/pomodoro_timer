@@ -34,7 +34,7 @@ function draw() {
     else {
       if (display(PAUSE_DURATION, color(244, 109, 76))) {
         state = !state;
-        tart_time = millis();
+        start_time = millis();
       }
       textSize(100);
       text("Take a break !", width/2, height*5/7);
