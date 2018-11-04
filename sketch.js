@@ -12,7 +12,7 @@ function setup() {
   rectMode(CENTER);
   textAlign(CENTER, CENTER);
   textFont('Baskerville');
-  button_start = new createMyButton('START', width/2, height/2, 400, 200, 70, color(70, 190, 255), color(50, 170, 255));
+  button_start = new createMyButton('START', width/2, height/2, 400, 200, 100, color(70, 190, 255), color(50, 170, 255));
 
   background(60, 170, 227); // blue
 }
