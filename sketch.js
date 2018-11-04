@@ -12,7 +12,7 @@ function setup() {
   rectMode(CENTER);
   textAlign(CENTER, CENTER);
   textFont('Baskerville');
-  button_start = new createMyButton('START', width/2, height/2, 200, 100, color(70, 190, 255), color(50, 170, 255));
+  button_start = new createMyButton('START', width/2, height/2, 400, 200, 70, color(70, 190, 255), color(50, 170, 255));
 
   background(60, 170, 227); // blue
 }
@@ -78,12 +78,13 @@ function display(time, col) {
 }
 
 
-function createMyButton(label, xpos, ypos, w, h, cNC, cC) {
+function createMyButton(label, xpos, ypos, w, h, textS, cNC, cC) {
   this.label = label;
   this.x = xpos;
   this.y = ypos;
   this.w = w;
   this.h = h;
+  this.textS = textS;
   this.colorNC = cNC;
   this.colorC = cC;
   this.clicked = false;
@@ -94,7 +95,7 @@ function createMyButton(label, xpos, ypos, w, h, cNC, cC) {
     else { fill(this.colorC); }
     rect(this.x, this.y, this.w, this.h);
     fill(255);
-    textSize(50);
+    textSize(this.textS);
     text(label, this.x, this.y);
   }
 
